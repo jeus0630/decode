@@ -1,0 +1,9 @@
+@charset "utf-8";
+@import "reset";
+.btn li a{
+    color: black;
+}
+
+.btn li a.on{
+    color: red;
+} 

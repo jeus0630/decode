@@ -1,0 +1,52 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Fredericka+the+Great);
+/* reset.css */
+html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, address, dl, dt, dd, ol, ul, li, fieldset, form, legend, table, caption, tbody, tfoot, thead, tr, th, td, input, select, textarea{margin:0; padding:0;}
+h1, h2, h3, h4, h5, h6{font-size:100%; }
+img, fieldset{border:0px;}
+table{border-collapse:collapse;}
+ul, ol, li{list-style:none;}
+address, em{font-style:normal;}
+li img, object{vertical-align:top;}
+input, select, textarea, form img{vertical-align:middle;}
+a{ outline:0; text-decoration:none; border:nonbe;}
+body { font: 12px /1.2 Dotum, "돋움", arial; color:#666;   }
+.noMargin { margin:0px!important;}
+
+.bg { position:fixed; width:100%; height:100%; background:url(../img/bg3.jpg) no-repeat center center; background-attachment:fixed; }
+#wrap { position:absolute; width:900px; height:500px; top:50%; margin-top:-300px; left:50%; margin-left:-450px; background:url(../img/bg3blur.jpg) no-repeat center center ; background-attachment:fixed; border-left:1px solid #333; border-top:1px solid #555; border-right:1px solid #000; border-bottom:1px solid #000; border-radius:20px; overflow:hidden;}
+.innerWrap { width:100%; height:100%; background:rgba(0,0,0,0.4 ); }
+.left { width:250px; height:100%; background:rgba(0,0,0,0.4); float:left; position:relative;}
+.left h1 { position:absolute; top:40px; left:50%; margin-left:-61px; opacity:1;}
+.left ul { width:100%; position:absolute; bottom:40px; left:0px;}
+.left ul li a { display:block; width:70%; height:50px; font:bold 13px/4 "arial"; color:#879050;  padding-left:30%; /*transition:all 0.5s;*/}
+.left ul li a:hover { background:rgba(0,0,0,0.3);}
+.left ul li a.on { background:rgba(0,0,0,0.5); color:#d8e686;}
+.right { width:650px; height:100%; float:right; position:relative;}
+.right>div { width:84%;  position:absolute; top:0px; left:0px; padding:8% 8%; overflow:hidden;}
+.right>div h2 { font:normal 46px/1 'Fredericka the Great'; color:#e3f289; margin-bottom:30px;}
+.right>div#box1 { height:500px; }
+.right>div#box2 { height:420px; display:none; }
+.right>div#box3 { height:540px; display:none;}
+.right>div#box4 { height:450px; display:none;}
+.right>div p { font:bold 14px/2 arial; color:#a6ae76;}
+.right>div>img { border:1px solid #444; opacity:0.7; margin-bottom:20px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

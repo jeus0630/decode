@@ -1,0 +1,5 @@
+.box1 {
+    width: 200px; height: 200px; background-color: aqua;
+    margin: 100px; padding: 20px;
+    border: 1px solid #000;
+}

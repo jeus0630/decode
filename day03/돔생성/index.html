@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        /*
+            <a href="#">링크</a>
+            DOM은 엘리먼트노드, 속성노드, 텍스트노드로 구성
+        */
+        var new_a = document.createElement("a"); //a 태그 엘리먼트 노드 생성
+        var new_href = document.createAttribute("href"); //href 속성 노드 생성
+        new_href.value = "#"; //href속성노드에 값 할당
+        new_a.setAttributeNode(new_href); //a태그 노드에 href속성 노드 바인딩
+        new_a.innerText = "링크"; //a 태그 노드에 텍스트 노드 연결
+
+        document.body.appendChild(new_a); //최종적으로 body안쪽에 방금 생성한 dom인 a요소 삽입
+
+        var result = "";
+        // result += "<a href='#'>네이트</a>";
+        // result += "<a href='#'>네이트</a>";
+        // result += "<a href='#'>네이트</a>";
+
+        for(var i = 0; i < 100; i++){
+            result += `${i+1}. <a href='#'>네이트</a><br>`;
+        }
+        console.log(result);
+        document.body.innerHTML = result;
+    </script>
+</body>
+</html>
