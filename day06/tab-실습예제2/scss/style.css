@@ -1,0 +1,130 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+table, td, th {
+  border-collapse: collapse;
+}
+
+fieldset {
+  border: none;
+}
+
+input, a, button {
+  outline: 1;
+}
+
+.hidden {
+  position: absolute;
+  top: -9999px;
+  opacity: 0;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/bg.jpg) no-repeat center fixed;
+}
+
+section #tab {
+  width: 800px;
+  height: 400px;
+  border: 1px solid #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -400px;
+  margin-top: -200px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+section #tab::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: url(../img/bg.jpg) no-repeat center fixed;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+}
+
+section #tab .menu {
+  width: 200px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: relative;
+}
+
+section #tab .menu #btns {
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  bottom: 30px;
+}
+
+section #tab .menu #btns li a {
+  display: block;
+  width: 100%;
+  height: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 60px;
+  font: bold 14px/40px "arial";
+  color: #888;
+}
+
+section #tab .menu #btns li a.on {
+  background: rgba(0, 0, 0, 0.7);
+  color: yellow;
+}
+
+section #tab .boxs > div {
+  width: 600px;
+  height: 400px;
+  background: rgba(0, 0, 0, 0.5);
+  font: bold 40px/1 "arial";
+  color: #fff;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: none;
+}
+
+section #tab .boxs > div#tab1 {
+  height: 400px;
+  display: block;
+}
+
+section #tab .boxs > div#tab2 {
+  height: 350px;
+}
+
+section #tab .boxs > div#tab3 {
+  height: 380px;
+}
+
+section #tab .boxs > div#tab4 {
+  height: 300px;
+}
+
+section #tab .boxs > div span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+/*# sourceMappingURL=style.css.map */
