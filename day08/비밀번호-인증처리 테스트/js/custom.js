@@ -12,6 +12,11 @@ $(document).ready(function(){
         -- pwd의 placeholder값을 불러와서 경고창을 출력 후 전송 취소
         -- 위의 조건이 하나라도 부합되지 않으면 경고창 출력 후 전송취소
         -- 위의 값이 모두 부합하면 전송하고 input값을 비움
+
+        .test();
+        
+        정규표현식 test("검사할문자열");
+        -- 검사할 문자열의 정규표현식에 조건에 부합하면 true반환, 그렇지 않으면 false 반환
     */
     
     $('input[type=submit]').on('click',function(e){
@@ -24,7 +29,7 @@ $(document).ready(function(){
 
         const num = /[0-9]/;
         const eng = /[a-zA-Z]/;
-        const spc = /[~!@#$%^&*()_+-=]/;
+        const spc = /[~!@#$%^&*()_+-=\]\[\<\>]]/;
         //num.test(전체 문자열);
         //전체 문자열에서 num에 해당하는 단어가 있으면 true반환, 없으면 false 반환
 
